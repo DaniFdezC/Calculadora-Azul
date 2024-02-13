@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8"/>
+
+    <title>Azul Point Calculator</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="theme-color" content="#000">
+
+    <link rel="shortcut icon" href="images/favicon_64x64.png" type="image/png">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tiles.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+
+    <link rel="manifest" href="manifest.webmanifest">
+  </head>
+
+  <body>
+    <div id="board"></div>
+
+    <div id="panel">
+      <img src="images/azul_logo.svg">
+
+      <div class="buttons">
+        <button id="undo-button">undo</button>
+        <button id="clear-button">clear</button>
+      </div>
+
+      <div class="scores">
+        <div class="score-box tiles-score-box">
+          <span class="value" id="tiles-score">0</span>
+        </div>
+
+        <div class="bonuses">
+          <div class="left-group">
+            <div class="score-box horizontal-bonus-score-box">
+              <div class="value" id="horizontal-bonus">0</div>
+            </div>
+            <div class="score-box all-colors-bonus-score-box">
+              <div class="value" id="all-colors-bonus">0</div>
+            </div>
+          </div>
+          <div class="score-box vertical-bonus-score-box">
+            <div class="value" id="vertical-bonus">0</div>
+          </div>
+        </div>
+
+        <div id="total-score">
+          0
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+  <script src="main.js"></script>
+
+</html>
